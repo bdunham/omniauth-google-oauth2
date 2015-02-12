@@ -43,6 +43,7 @@ module OmniAuth
           :email      => verified_email,
           :first_name => raw_info['given_name'],
           :last_name  => raw_info['family_name'],
+          :hd         => raw_info['hd'],
           :image      => image_url,
           :urls => {
             'Google' => raw_info['profile']
